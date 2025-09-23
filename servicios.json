@@ -1,0 +1,301 @@
+{
+  "servicios": {
+    "desarrollo-web": {
+      "id": "desarrollo-web",
+      "titulo": "Desarrollo de aplicaciones web",
+      "precio": "$3.500.000",
+      "precioOriginal": "$3.850.000",
+      "imagen": "./images/servicios/cloud.jpg",
+      "promoTag": "-10%",
+      "stock": "✓ Disponible - Valor base por proyecto estándar",
+      "promoTexto": "🔥 Promoción 10% OFF - Primer proyecto",
+      "descripcion": "Desarrollamos aplicaciones web modernas, responsivas y escalables utilizando las últimas tecnologías. Nuestro equipo especializado crea soluciones personalizadas que se adaptan a las necesidades específicas de tu negocio, garantizando funcionalidad, seguridad y excelente experiencia de usuario.",
+      "caracteristicas": [
+        "Análisis de requerimientos y planificación del proyecto",
+        "Diseño de arquitectura y modelado de base de datos",
+        "Desarrollo frontend responsivo y moderno",
+        "Desarrollo backend robusto y escalable",
+        "Integración de APIs y servicios externos",
+        "Testing exhaustivo y control de calidad",
+        "Despliegue y configuración en servidor",
+        "Documentación técnica completa",
+        "Capacitación básica para administradores",
+        "Garantía de 3 meses post-lanzamiento",
+        "Soporte técnico durante la garantía"
+      ],
+      "tecnologias": [
+        "Frontend: React.js, Vue.js, Angular",
+        "Backend: Node.js, Python (Django/Flask), PHP (Laravel)",
+        "Bases de datos: MySQL, PostgreSQL, MongoDB",
+        "Cloud Services: AWS, Google Cloud Platform, Azure",
+        "Control de versiones: Git con GitHub/GitLab",
+        "Metodologías: Scrum, desarrollo ágil",
+        "Herramientas: Docker, CI/CD, testing automatizado"
+      ],
+      "proceso": [
+        "Reunión inicial y levantamiento de requerimientos",
+        "Creación de wireframes y prototipos",
+        "Desarrollo en sprints de 2 semanas",
+        "Revisiones periódicas con el cliente",
+        "Testing y ajustes antes del lanzamiento",
+        "Despliegue en producción",
+        "Capacitación y documentación final"
+      ],
+      "garantias": [
+        "Garantía de funcionamiento por 3 meses",
+        "Corrección de bugs sin costo adicional",
+        "Soporte técnico prioritario",
+        "Actualizaciones de seguridad incluidas",
+        "Documentación técnica y de usuario",
+        "Capacitación incluida para tu equipo"
+      ]
+    },
+    "aplicaciones-moviles": {
+      "id": "aplicaciones-moviles",
+      "titulo": "Aplicaciones móviles (Android / iOS)",
+      "precio": "$5.000.000",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/app-movil.jpg",
+      "promoTag": "+1 año",
+      "stock": "✓ Disponible",
+      "promoTexto": "📱 Incluye soporte extendido",
+      "descripcion": "Apps nativas e híbridas para Android e iOS con diseño intuitivo y funcionalidades avanzadas.",
+      "caracteristicas": [
+        "Desarrollo nativo para Android e iOS",
+        "Interfaz moderna y fácil de usar",
+        "Notificaciones push",
+        "Publicación en tiendas oficiales"
+      ]
+    },
+    "diseno-ui-ux": {
+      "id": "diseno-ui-ux",
+      "titulo": "Diseño UI / UX",
+      "precio": "$1.200.000",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/ui-ux.jpg",
+      "promoTag": "+2 extra",
+      "stock": "✓ Disponible",
+      "promoTexto": "🎨 Diseños extra incluidos",
+      "descripcion": "Interfaces atractivas y experiencia de usuario optimizada.",
+      "caracteristicas": [
+        "Prototipos interactivos",
+        "Diseño visual moderno",
+        "Testing de usabilidad",
+        "Archivos fuente incluidos"
+      ]
+    },
+    "soporte-mantenimiento": {
+      "id": "soporte-mantenimiento",
+      "titulo": "Soporte y mantenimiento",
+      "precio": "$400.000 / mes",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/soporte.jpg",
+      "promoTag": "1er mes",
+      "stock": "✓ Disponible",
+      "promoTexto": "🛠️ Primer mes gratis",
+      "descripcion": "Mantenimiento continuo y soporte técnico especializado.",
+      "caracteristicas": [
+        "Monitoreo 24/7",
+        "Actualizaciones de seguridad",
+        "Backup automático",
+        "Soporte técnico rápido"
+      ]
+    },
+    "consultoria": {
+      "id": "consultoria",
+      "titulo": "Consultoría en transformación digital",
+      "precio": "$2.000.000",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/consultoria.jpg",
+      "promoTag": "Taller",
+      "stock": "✓ Disponible",
+      "promoTexto": "📚 Taller incluido",
+      "descripcion": "Asesoramiento especializado para modernizar tus procesos empresariales.",
+      "caracteristicas": [
+        "Análisis de procesos actuales",
+        "Estrategia de digitalización",
+        "Capacitación del personal",
+        "Seguimiento y optimización"
+      ]
+    },
+    "integracion-apis": {
+      "id": "integracion-apis",
+      "titulo": "Integración de APIs",
+      "precio": "$1.500.000",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/api.jpg",
+      "promoTag": "+2 APIs",
+      "stock": "✓ Disponible",
+      "promoTexto": "🔗 APIs extra incluidas",
+      "descripcion": "Conectamos tus sistemas con servicios externos mediante APIs.",
+      "caracteristicas": [
+        "Integración con sistemas existentes",
+        "APIs REST y GraphQL",
+        "Documentación completa",
+        "Pruebas automatizadas"
+      ]
+    },
+    "implementacion-erp": {
+      "id": "implementacion-erp",
+      "titulo": "Implementación ERP / CRM",
+      "precio": "$6.000.000",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/erp-crm.jpg",
+      "promoTag": "Capacit.",
+      "stock": "✓ Disponible",
+      "promoTexto": "🎓 Capacitación incluida",
+      "descripcion": "Sistemas de gestión empresarial adaptados a tu negocio.",
+      "caracteristicas": [
+        "Personalización según necesidades",
+        "Migración de datos",
+        "Capacitación de usuarios",
+        "Soporte post-implementación"
+      ]
+    },
+    "ciberseguridad": {
+      "id": "ciberseguridad",
+      "titulo": "Ciberseguridad y auditoría",
+      "precio": "$2.500.000",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/ciberseguridad.jpg",
+      "promoTag": "Informe+",
+      "stock": "✓ Disponible",
+      "promoTexto": "📊 Informe detallado incluido",
+      "descripcion": "Protección integral y auditorías de seguridad para tu empresa con análisis completo de vulnerabilidades.",
+      "caracteristicas": [
+        "Auditoría completa de sistemas y redes",
+        "Análisis de vulnerabilidades críticas",
+        "Implementación de medidas de protección",
+        "Monitoreo continuo de amenazas",
+        "Plan de respuesta a incidentes",
+        "Capacitación en ciberseguridad para empleados",
+        "Informe ejecutivo detallado",
+        "Recomendaciones personalizadas"
+      ],
+      "tecnologias": [
+        "Herramientas de pentesting profesionales",
+        "Sistemas de detección de intrusos (IDS/IPS)",
+        "Firewalls de nueva generación",
+        "Análisis de logs y SIEM",
+        "Cifrado avanzado de datos",
+        "Autenticación multifactor",
+        "Backup y recuperación segura"
+      ],
+      "proceso": [
+        "Evaluación inicial de la infraestructura",
+        "Mapeo de activos y riesgos",
+        "Pruebas de penetración controladas",
+        "Análisis de vulnerabilidades",
+        "Implementación de controles de seguridad",
+        "Capacitación del personal",
+        "Entrega de informe y recomendaciones"
+      ],
+      "garantias": [
+        "Certificado de auditoría de seguridad",
+        "Plan de mejora continua",
+        "Soporte post-implementación por 6 meses",
+        "Actualizaciones de políticas de seguridad",
+        "Revisión de cumplimiento normativo",
+        "Respaldo técnico especializado"
+      ]
+    },
+    "capacitacion": {
+      "id": "capacitacion",
+      "titulo": "Capacitación en desarrollo",
+      "precio": "$900.000",
+      "precioOriginal": "$1.200.000",
+      "imagen": "./images/servicios/capacitacion.jpg",
+      "promoTag": "Certif.",
+      "stock": "✓ Disponible",
+      "promoTexto": "🎓 Certificado incluido",
+      "descripcion": "Programas de capacitación en desarrollo de software y tecnologías modernas para empresas y desarrolladores.",
+      "caracteristicas": [
+        "Cursos personalizados según necesidades",
+        "Metodología práctica y teórica",
+        "Proyectos reales de práctica",
+        "Certificado de finalización",
+        "Material didáctico incluido",
+        "Seguimiento post-capacitación",
+        "Modalidad presencial y virtual",
+        "Grupos reducidos para mejor aprendizaje"
+      ],
+      "tecnologias": [
+        "JavaScript (ES6+), TypeScript",
+        "React.js, Vue.js, Angular",
+        "Node.js, Express.js",
+        "Python, Django, Flask",
+        "Bases de datos SQL y NoSQL",
+        "Git y control de versiones",
+        "Metodologías ágiles (Scrum)",
+        "Docker y contenedores"
+      ],
+      "proceso": [
+        "Evaluación de nivel y necesidades",
+        "Diseño de plan de capacitación personalizado",
+        "Sesiones teóricas y prácticas",
+        "Desarrollo de proyectos guiados",
+        "Evaluaciones periódicas",
+        "Proyecto final integrador",
+        "Entrega de certificado"
+      ],
+      "garantias": [
+        "Certificado oficial de capacitación",
+        "Material de estudio permanente",
+        "Acceso a comunidad de desarrolladores",
+        "Consultas post-curso por 3 meses",
+        "Actualización de contenidos gratuita",
+        "Bolsa de trabajo exclusiva"
+      ]
+    },
+    "migracion-cloud": {
+      "id": "migracion-cloud",
+      "titulo": "Migración a la nube (Cloud)",
+      "precio": "$3.000.000",
+      "precioOriginal": null,
+      "imagen": "./images/servicios/cloud.jpg",
+      "promoTag": "3 meses",
+      "stock": "✓ Disponible",
+      "promoTexto": "☁️ 3 meses de soporte gratuito",
+      "descripcion": "Migración completa de sistemas on-premise a servicios cloud con optimización de costos y rendimiento.",
+      "caracteristicas": [
+        "Análisis de infraestructura actual",
+        "Plan de migración personalizado",
+        "Migración de datos segura",
+        "Configuración de servicios cloud",
+        "Optimización de costos operativos",
+        "Backup y recuperación automática",
+        "Monitoreo y alertas 24/7",
+        "Capacitación del equipo técnico"
+      ],
+      "tecnologias": [
+        "Amazon Web Services (AWS)",
+        "Microsoft Azure",
+        "Google Cloud Platform (GCP)",
+        "Docker y Kubernetes",
+        "Terraform para infraestructura",
+        "CI/CD automatizado",
+        "Bases de datos cloud nativas",
+        "CDN y optimización de contenido"
+      ],
+      "proceso": [
+        "Auditoría de infraestructura actual",
+        "Diseño de arquitectura cloud",
+        "Planificación de migración por fases",
+        "Migración de datos y aplicaciones",
+        "Pruebas de funcionamiento",
+        "Optimización de rendimiento",
+        "Go-live y estabilización",
+        "Transferencia de conocimiento"
+      ],
+      "garantias": [
+        "Migración exitosa garantizada",
+        "Soporte técnico por 3 meses",
+        "Monitoreo incluido durante garantía",
+        "Rollback plan en caso necesario",
+        "Optimización de costos continua",
+        "Documentación técnica completa",
+        "Capacitación incluida para administradores"
+      ]
+    }
+  }
+}

@@ -1,15 +1,15 @@
-/* ===== GROUP 15 SOFTWARE SOLUTIONS - ESTILOS PRINCIPALES ===== */
 
-/* ===== VARIABLES CSS ===== */
+
+/* VARIABLES CSS*/
 :root {
   --black: #0b0b0b;
   --metal: #6b6f73;
   --light-metal: #f2f3f4;
-  --accent: #0065B4;
+  --accent: #539EA3;
   --white: #ffffff;
 }
 
-/* ===== RESET Y BASE ===== */
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== HEADER Y NAVEGACIÓN ===== */
+/* header */
 header {
   background: var(--white);
   border-bottom: 1px solid #eee;
@@ -44,17 +44,14 @@ nav {
   color: var(--black);
 }
 
-.logo-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--black), var(--metal));
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-weight: bold;
-  font-size: 14px;
+
+
+
+.logo-icon-sup {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .nav-links {
@@ -80,7 +77,7 @@ nav {
   color: var(--accent);
 }
 
-/* ===== MAIN CONTENT ===== */
+/* main */
 main {
   padding: 40px 24px;
 }
@@ -95,31 +92,23 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* ===== BREADCRUMB ===== */
+
 .breadcrumb {
   margin-bottom: 20px;
   color: var(--metal);
   font-size: 14px;
 }
 
-.breadcrumb a {
-  color: var(--metal);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 
-.breadcrumb a:hover {
-  color: var(--accent);
-}
 
-/* ===== BOTONES ===== */
+/*boton*/
 .btn {
   padding: 10px 16px;
   border-radius: 8px;
   font-weight: 600;
   border: none;
   cursor: pointer;
-  background: var(--black);
+  background: #0B495B;
   color: var(--white);
   transition: all 0.3s ease;
   font-size: 14px;
@@ -128,16 +117,13 @@ h2 {
   text-align: center;
 }
 
-.btn:hover {
-  background: var(--accent);
-  transform: translateY(-1px);
-}
+
 
 .btn.primary {
   padding: 15px 25px;
   border-radius: 10px;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--black), var(--metal));
+  background: #0B495B ;
   font-size: 16px;
   width: 100%;
   margin-top: 20px;
@@ -166,7 +152,7 @@ h2 {
   color: var(--white);
 }
 
-/* ===== GRID DE SERVICIOS ===== */
+/* servicios*/
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -180,19 +166,15 @@ h2 {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
+
 
 .card img {
   width: 100%;
@@ -230,8 +212,6 @@ h2 {
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
-  font-weight: 600;
-  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
   z-index: 10;
 }
 
@@ -249,7 +229,7 @@ h2 {
   z-index: 10;
 }
 
-/* ===== DETALLE DE SERVICIO ===== */
+/* detalle*/
 .service-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -318,7 +298,7 @@ h2 {
   font-size: 16px;
 }
 
-/* ===== CARACTERÍSTICAS ===== */
+/* features */
 .features {
   margin: 20px 0;
 }
@@ -346,7 +326,7 @@ h2 {
   margin-right: 8px;
 }
 
-/* ===== MODAL ===== */
+/* modal */
 .modal {
   position: fixed;
   z-index: 1000;
@@ -397,7 +377,7 @@ h2 {
   color: var(--black);
 }
 
-/* ===== FOOTER ===== */
+/* footer */
 footer {
   background: var(--light-metal);
   padding: 20px 24px;
@@ -429,7 +409,7 @@ footer {
   color: var(--accent);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+
 @media (max-width: 800px) {
   .service-detail {
     grid-template-columns: 1fr;
