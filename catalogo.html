@@ -6,134 +6,190 @@
   <meta name="description" content="Group 15 Software Solutions - Catálogo completo de servicios de desarrollo web, aplicaciones móviles, UI/UX, consultoría y más. Soluciones tecnológicas para pymes y emprendedores.">
   <meta name="keywords" content="desarrollo web, aplicaciones móviles, UI/UX, software, tecnología, Group 15">
   <title>Group 15 - Software Solutions | Catálogo de Servicios</title>
-  <link rel="stylesheet" href="./styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles_services.css">
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">
-        <img src="./images/servicios/Logo.jpg" alt="Group 15 Logo" class="logo-icon-sup">
-        <span>Group 15 - Software Solutions</span>
-      </div>
-      <div class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html" class="active">Servicios</a>
-        <a href="#reservas">Reservas</a>
-        <a href="#contacto">Contacto</a>
-        <a href="login.html">Login</a>
+    <nav class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-auto col-md-12">
+          <div class="logo">
+            <img src="./images/servicios/Logo.jpg" alt="Group 15 Logo" class="logo-icon-sup">
+            <span>Group 15 - Software Solutions</span>
+          </div>
+        </div>
+        <div class="col-lg col-md-12">
+          <div class="nav-links d-flex flex-wrap justify-content-center justify-content-lg-end gap-3">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" class="active">Servicios</a>
+            <a href="Panel_Admin.html">Gestión de servicios</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main>
-    <h2>Nuestros Servicios</h2>
-    <div class="grid">
+  <main class="container-fluid px-lg-5">
+    <h2 class="my-4">Nuestros Servicios</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 grid">
       <!-- Servicio 1: Desarrollo Web -->
-      <div class="card">
-        <div class="promo-tag">-10%</div>
-        <img src="./images/servicios/cloud.jpg" alt="Desarrollo de aplicaciones web modernas y responsivas">
-        <h3>Desarrollo de aplicaciones web</h3>
-        <div class="price">$3.500.000</div>
-        <a href="detalle.html?servicio=desarrollo-web" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">-10%</div>
+          <img src="./images/servicios/cloud.jpg" alt="Desarrollo de aplicaciones web modernas y responsivas" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Desarrollo de aplicaciones web</h3>
+            <div class="price">$3.500.000</div>
+            <a href="detalle.html?servicio=desarrollo-web" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 2: Apps Móviles -->
-      <div class="card">
-        <div class="promo-tag">+1 año</div>
-        <img src="./images/servicios/app-movil.jpg" alt="Aplicaciones móviles para Android e iOS">
-        <h3>Aplicaciones móviles (Android / iOS)</h3>
-        <div class="price">$5.000.000</div>
-        <a href="detalle.html?servicio=aplicaciones-moviles" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">+1 año</div>
+          <img src="./images/servicios/app-movil.jpg" alt="Aplicaciones móviles para Android e iOS" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Aplicaciones móviles (Android / iOS)</h3>
+            <div class="price">$5.000.000</div>
+            <a href="detalle.html?servicio=aplicaciones-moviles" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 3: UI/UX -->
-      <div class="card">
-        <div class="promo-tag">+2 extra</div>
-        <img src="./images/servicios/ui-ux.jpg" alt="Diseño de interfaces de usuario y experiencia UX">
-        <h3>Diseño UI / UX</h3>
-        <div class="price">$1.200.000</div>
-        <a href="detalle.html?servicio=diseno-ui-ux" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">+2 extra</div>
+          <img src="./images/servicios/ui-ux.jpg" alt="Diseño de interfaces de usuario y experiencia UX" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Diseño UI / UX</h3>
+            <div class="price">$1.200.000</div>
+            <a href="detalle.html?servicio=diseno-ui-ux" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 4: Soporte -->
-      <div class="card">
-        <div class="promo-tag">1er mes</div>
-        <img src="./images/servicios/soporte.jpg" alt="Soporte técnico y mantenimiento de aplicaciones">
-        <h3>Soporte y mantenimiento</h3>
-        <div class="price">$400.000 / mes</div>
-        <a href="detalle.html?servicio=soporte-mantenimiento" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">1er mes</div>
+          <img src="./images/servicios/soporte.jpg" alt="Soporte técnico y mantenimiento de aplicaciones" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Soporte y mantenimiento</h3>
+            <div class="price">$400.000 / mes</div>
+            <a href="detalle.html?servicio=soporte-mantenimiento" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 5: Consultoría -->
-      <div class="card">
-        <div class="promo-tag">Taller</div>
-        <img src="./images/servicios/consultoria.jpg" alt="Consultoría en transformación digital empresarial">
-        <h3>Consultoría en transformación digital</h3>
-        <div class="price">$2.000.000</div>
-        <a href="detalle.html?servicio=consultoria" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">Taller</div>
+          <img src="./images/servicios/consultoria.jpg" alt="Consultoría en transformación digital empresarial" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Consultoría en transformación digital</h3>
+            <div class="price">$2.000.000</div>
+            <a href="detalle.html?servicio=consultoria" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 6: APIs -->
-      <div class="card">
-        <div class="promo-tag">+2 APIs</div>
-        <img src="./images/servicios/api.jpg" alt="Integración de APIs y servicios web">
-        <h3>Integración de APIs</h3>
-        <div class="price">$1.500.000</div>
-        <a href="detalle.html?servicio=integracion-apis" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">+2 APIs</div>
+          <img src="./images/servicios/api.jpg" alt="Integración de APIs y servicios web" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Integración de APIs</h3>
+            <div class="price">$1.500.000</div>
+            <a href="detalle.html?servicio=integracion-apis" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 7: ERP/CRM -->
-      <div class="card">
-        <div class="promo-tag">Capacit.</div>
-        <img src="./images/servicios/erp-crm.jpg" alt="Implementación de sistemas ERP y CRM empresariales">
-        <h3>Implementación ERP / CRM</h3>
-        <div class="price">$6.000.000</div>
-        <a href="detalle.html?servicio=implementacion-erp" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">Capacit.</div>
+          <img src="./images/servicios/erp-crm.jpg" alt="Implementación de sistemas ERP y CRM empresariales" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Implementación ERP / CRM</h3>
+            <div class="price">$6.000.000</div>
+            <a href="detalle.html?servicio=implementacion-erp" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 8: Ciberseguridad -->
-      <div class="card">
-        <div class="promo-tag">Informe+</div>
-        <img src="./images/servicios/ciberseguridad.jpg" alt="Auditoría de ciberseguridad y protección de datos">
-        <h3>Ciberseguridad y auditoría</h3>
-        <div class="price">$2.500.000</div>
-        <a href="detalle.html?servicio=ciberseguridad" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">Informe+</div>
+          <img src="./images/servicios/ciberseguridad.jpg" alt="Auditoría de ciberseguridad y protección de datos" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Ciberseguridad y auditoría</h3>
+            <div class="price">$2.500.000</div>
+            <a href="detalle.html?servicio=ciberseguridad" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 9: Capacitación -->
-      <div class="card">
-        <div class="promo-tag">Certif.</div>
-        <img src="./images/servicios/capacitacion.jpg" alt="Capacitación en desarrollo de software y programación">
-        <h3>Capacitación en desarrollo</h3>
-        <div class="price">$900.000</div>
-        <a href="detalle.html?servicio=capacitacion" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">Certif.</div>
+          <img src="./images/servicios/capacitacion.jpg" alt="Capacitación en desarrollo de software y programación" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Capacitación en desarrollo</h3>
+            <div class="price">$900.000</div>
+            <a href="detalle.html?servicio=capacitacion" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
       
       <!-- Servicio 10: Cloud -->
-      <div class="card">
-        <div class="promo-tag">3 meses</div>
-        <img src="./images/servicios/cloud.jpg" alt="Migración de sistemas a la nube y servicios cloud">
-        <h3>Migración a la nube (Cloud)</h3>
-        <div class="price">$3.000.000</div>
-        <a href="detalle.html?servicio=migracion-cloud" class="btn">Ver detalle</a>
+      <div class="col">
+        <div class="card h-100">
+          <div class="promo-tag">3 meses</div>
+          <img src="./images/servicios/cloud.jpg" alt="Migración de sistemas a la nube y servicios cloud" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <h3>Migración a la nube (Cloud)</h3>
+            <div class="price">$3.000.000</div>
+            <a href="detalle.html?servicio=migracion-cloud" class="btn mt-auto">Ver detalle</a>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer>
-    <div class="contact">
-      <div>📞 (+57) 300 123 4567</div>
-      <div>✉️ contacto@group15.com</div>
-    </div>
-    <div class="socials">
-      Síguenos: 
-      <a href="#" aria-label="Síguenos en Facebook">Facebook</a> 
-      <a href="#" aria-label="Síguenos en Instagram">Instagram</a> 
-      <a href="#" aria-label="Conecta con nosotros en LinkedIn">LinkedIn</a>
+  <footer class="mt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact d-flex flex-wrap gap-3">
+            <div>📞 (+57) 300 123 4567</div>
+            <div>✉️ contacto@group15.com</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="socials text-md-end">
+            Síguenos: 
+            <a href="#" aria-label="Síguenos en Facebook">Facebook</a> 
+            <a href="#" aria-label="Síguenos en Instagram">Instagram</a> 
+            <a href="#" aria-label="Conecta con nosotros en LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./scripts.js"></script>
 </body>
 </html>

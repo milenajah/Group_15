@@ -4,26 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Group 15 - Soluciones innovadoras</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">
-      <img src="images/Logo.jpeg" alt="Logo Group 15">
-      <span>Group 15 - Software Solutions</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="catalogo.html">Servicios</a></li>
-        <li><a href="#">Reservas</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="auth-buttons">
-      <button class="btn-outline">Iniciar Sesión</button>
-      <button class="btn-primary">Registrarme</button>
+    <div class="container-fluid">
+      <div class="row w-100 align-items-center">
+        <div class="col-auto">
+          <div class="logo">
+            <img src="images/Logo.jpeg" alt="Logo Group 15">
+            <span>Group 15 - Software Solutions</span>
+          </div>
+        </div>
+        <div class="col">
+          <nav>
+            <ul class="nav-links d-flex justify-content-center mb-0">
+              <li><a href="index.html" class="active">Inicio</a></li>
+              <li><a href="catalogo.html"class="active">Servicios</a></li>
+              <li><a href="#modal-servicio">Reservas</a></li>
+              <li><a href="#footer">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-auto">
+          <div class="auth-buttons d-flex gap-2">
+            <button class="btn-outline">Iniciar Sesión</button>
+            <button class="btn-primary">Registrarme</button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -32,67 +44,113 @@
     <div class="hero-content">
       <h1>Group 15</h1>
       <p>Soluciones innovadoras para tu empresa</p>
-      <a href="catalogo.html" class="btn-primary">Catálogo de servicios</a>
+    
+      <button class=" btn-primary h2"  onclick="window.location.href= 'catalogo.html'">Catálogo de servicios</button>
     </div>
   </section>
 
   <!-- Acerca de -->
   <section class="about">
-    <div class="about-text">
-      <h2>Acerca de Group 15</h2>
-      <p>
-        Group 15 es una empresa especializada en brindar soluciones tecnológicas a negocios
-        que buscan mejorar su presencia digital. Nos dedicamos al desarrollo de páginas web,
-        aplicaciones móviles y diversos servicios asociados con computadores y tecnología.
-        Con 3 años de experiencia, hemos logrado posicionarnos como aliados estratégicos de
-        empresas que buscan crecer y diferenciarse en un entorno cada vez más competitivo.
-      </p>
-    </div>
-    <div class="about-img">
-      <img src="images/Acerca.png" alt="Tech Support">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 col-md-6">
+          <div class="about-text">
+            <h2>Acerca de Group 15</h2>
+            <p>
+              Group 15 es una empresa especializada en brindar soluciones tecnológicas a negocios
+              que buscan mejorar su presencia digital. Nos dedicamos al desarrollo de páginas web,
+              aplicaciones móviles y diversos servicios asociados con computadores y tecnología.
+              Con 3 años de experiencia, hemos logrado posicionarnos como aliados estratégicos de
+              empresas que buscan crecer y diferenciarse en un entorno cada vez más competitivo.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="about-img">
+            <img src="images/Acerca.png" alt="Tech Support" class="img-fluid">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+
+<!-- Modal -->
+<div id="modal-servicio" class="modal">
+  <div class="modal-contenido">
+    <a href="#" class="cerrar">×</a>
+    <h2>Solicitar Servicio</h2>
+    <p>¡Excelente elección! Nos pondremos en contacto contigo para discutir tu proyecto.</p>
+    <ul>
+      <li><strong>Teléfono:</strong> (+57) 300 123 4567</li>
+      <li><strong>Email:</strong> contacto@group15.com</li>
+      <li><strong>Horarios:</strong> Lun-Vie 8:00 AM - 4:00 PM</li>
+      <li><strong>Ubicación:</strong> Medellín, Antioquia, Colombia</li>
+      <li><strong>Promoción:</strong> 10% de descuento en tu primer proyecto</li>
+      <li><strong>Respuesta:</strong> 24 horas o menos</li>
+    </ul>
+    <input type="text" placeholder="Escríbenos tu nombre, correo o número de contacto..." style="width: 100%; padding: 8px; margin-top: 10px;">
+    <br><br>
+    <a href="#" class="btn-primary" onclick="mostrarAlerta()">Enviar</a>
+
+  </div>
+</div>
+
+
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <img src="images/Logo.jpeg" alt="Logo Group 15" class="footer-logo">
-        <p>Expertos en soporte e instalación <br> 
-        de servicios tecnológicos para <br>
-        empresas.</p>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 footer-section">
+            <img src="images/Logo.jpeg" alt="Logo Group 15" class="footer-logo">
+            <p>Expertos en soporte e instalación <br> 
+            de servicios tecnológicos para <br>
+            empresas.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-section">
+            <h4>Síguenos</h4>
+            <p>🦋 Facebook</p>
+            <p>📷 Instagram</p>
+            <p>💼 Linkedin</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-section">
+            <h4>Empresa</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Quiénes somos</a></li>
+              <li><a href="catalogo.html">Servicios</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-section">
+            <h4>Horarios</h4>
+            <p>Lunes a Viernes <br> 7:30 am - 6:00 pm</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-section">
+            <h4>Contáctanos</h4>
+            <p>📞 320-456-7890</p>
+            <p>✉️ servicios@group15.com</p>
+          </div>
+        </div>
       </div>
 
-      <div class="footer-section">
-        <h4>Síguenos</h4>
-        <p>🐦 Facebook</p>
-        <p>📷 Instagram</p>
-        <p>💼 Linkedin</p>
+      <div class="footer-bottom text-center">
+        <p>&copy; 2025 Group 15. Todos los derechos reservados.</p>
       </div>
-
-      <div class="footer-section">
-        <h4>Empresa</h4>
-        <ul>
-          <li><a href="index.html">Quiénes somos</a></li>
-          <li><a href="catalogo.html">Servicios</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Horarios</h4>
-        <p>Lunes a Viernes <br> 7:30 am - 6:00 pm</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Contáctanos</h4>
-        <p>📞 320-456-7890</p>
-        <p>✉️ servicios@group15.com</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 Group 15. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  function mostrarAlerta() {
+    alert("¡Información enviada correctamente!");
+  }
+</script>
+
 </body>
 </html>

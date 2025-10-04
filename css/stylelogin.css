@@ -9,12 +9,12 @@ body {
   background: #f9fafb;
   color: #333;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #fff;
   padding: 0.8rem 2rem;
   border-bottom: 1px solid #ddd;
@@ -39,7 +39,6 @@ body {
 /* Links */
 .navbar .nav-links {
   list-style: none;
-  display: flex;
   gap: 1.5rem;
 }
 
@@ -56,7 +55,6 @@ body {
   background: #e5e7eb;
   color: #000;
 }
-
 
 .navbar .nav-links li a.active {
   background: #5ba2a0;
@@ -81,16 +79,16 @@ body {
   opacity: 0.9;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 1.5rem;
+main.container {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  flex: 1;
+  margin-bottom: 2rem;
 }
 
-.container h2 {
+main.container h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #1e3a8a;
@@ -135,48 +133,110 @@ body {
   background: #b91c1c;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-thead tr {
+/* Tabla mejorada con Bootstrap */
+table thead tr {
   background-color: #1d3c91;
   color: white;
-  text-align: left;
-  font-weight: bold;
 }
 
-thead th {
+table thead th {
   padding: 12px 15px;
 }
 
-tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-tbody td {
+table tbody td {
   padding: 12px 15px;
 }
-
-tbody tr:hover {
-  background-color: #f1f1f1;
-}
-
-td:last-child {
-  text-align: center;
-}
-
-
 
 .footer {
   background: #1e3a8a;
   color: #fff;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
   font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive - Tablets */
+@media (max-width: 992px) {
+  .navbar .container-fluid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links {
+    gap: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+  
+  .navbar .brand {
+    font-size: 0.9rem;
+  }
+  
+  .navbar .brand .logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .navbar .nav-links {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .navbar .nav-links li a {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+  }
+  
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  .container h2 {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table thead th,
+  table tbody td {
+    padding: 8px 10px;
+  }
+  
+  .btn-small {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
 }
