@@ -23,5 +23,6 @@ La idea principal: crear una **aplicación web** que muestre un catálogo de ser
 ## 🛠️ Tecnologías usadas
 - **HTML5**  
 - **CSS3**  
-- **JavaScript** vanilla
+- **JavaScript vanilla** 
+- **bootstrap 5.3.0**
 
